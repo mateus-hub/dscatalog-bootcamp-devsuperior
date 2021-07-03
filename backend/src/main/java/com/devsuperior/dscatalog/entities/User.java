@@ -156,6 +156,4 @@ public class User implements  UserDetails, Serializable{
 		return true;
 
 	}
-
-	
 }
