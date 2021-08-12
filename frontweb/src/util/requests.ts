@@ -110,3 +110,27 @@ axios.interceptors.response.use(function (response) {
     const tokenData = getTokenData();
     return (tokenData && tokenData.exp * 1000 > Date.now()) ? true : false;
   }
+
+  export const hasAnyRoles = (roles: Role[]) : boolean => {
+
+    if (roles.length === 0){
+      return true;
+    }
+
+    const tokenData = getTokenData();
+
+    /* Forma alternativa "Função de alta ordem"
+    if(tokenData !== undefined) {
+      return roles.some(role => tokenData.authorities.includes(role));
+    }*/
+    
+    if(tokenData !== undefined) {
+      for (var i = 0; i < roles.length; i++) {
+          if (tokenData.authorities.includes(roles[i])) {
+            return true;
+      }
+    }
+  }
+
+    return false;
+  } 
