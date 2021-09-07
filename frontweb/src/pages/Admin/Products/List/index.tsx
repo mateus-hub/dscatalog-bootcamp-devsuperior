@@ -19,8 +19,12 @@ const List = () => {
         name: 'Livros',
       },
       {
-        id: 3,
+        id: 2,
         name: 'Computadores',
+      },
+      {
+        id: 3,
+        name: 'Eletrônicos',
       },
     ],
   };
