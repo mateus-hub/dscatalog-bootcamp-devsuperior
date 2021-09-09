@@ -1,14 +1,14 @@
-import './styles.css';
-
 import ProductPrice from 'components/ProductPrice';
 import { Product } from 'types/product';
 import CategoryBadge from '../CategoryBadge';
+
+import './styles.css';
 
 type Props = {
   product: Product;
 };
 
-const ProductCrudCard = ({ product }: Props) => {
+const ProductCrudCard = ({ product } : Props) => {
   return (
     <div className="base-card product-crud-card">
       <div className="product-crud-card-top-container">
