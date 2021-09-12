@@ -1,6 +1,6 @@
 import { AxiosRequestConfig } from 'axios';
 import Pagination from 'components/Pagination';
-import ProductFilter from 'components/ProductFilter';
+import ProductFilter, { ProductFilterData } from 'components/ProductFilter';
 import ProductCrudCard from 'pages/Admin/Products/ProductCrudCard';
 import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -12,19 +12,25 @@ import './styles.css';
 
 type ControlComponentsData = {
   activePage: number;
-}
+  filterData: ProductFilterData;
+};
 
 const List = () => {
   const [page, setPage] = useState<SpringPage<Product>>();
 
-const [controlComponentsData, setControlComponentsData] = useState<ControlComponentsData>(
-    {
-       activePage: 0
-    }
-  );
+  const [controlComponentsData, setControlComponentsData] =
+    useState<ControlComponentsData>({
+      activePage: 0,
+      filterData: { name: '', category: null },
+    });
 
   const handlePageChange = (pageNumber: number) => {
-    setControlComponentsData({activePage: pageNumber});
+    setControlComponentsData({ activePage: pageNumber, filterData: controlComponentsData.filterData });
+  };
+
+  const handleSubmitFilter = (data: ProductFilterData) => {
+    setControlComponentsData({ activePage: 0, filterData: data });
+
   };
 
   const getProducts = useCallback(() => {
@@ -34,6 +40,8 @@ const [controlComponentsData, setControlComponentsData] = useState<ControlCompon
       params: {
         page: controlComponentsData.activePage,
         size: 3,
+        name: controlComponentsData.filterData.name,
+        categoryId: controlComponentsData.filterData.category?.id
       },
     };
 
@@ -43,10 +51,8 @@ const [controlComponentsData, setControlComponentsData] = useState<ControlCompon
   }, [controlComponentsData]);
 
   useEffect(() => {
-   getProducts();
+    getProducts();
   }, [getProducts]);
-
-  
 
   return (
     <div className="product-crud-container">
@@ -56,7 +62,7 @@ const [controlComponentsData, setControlComponentsData] = useState<ControlCompon
             ADICIONAR
           </button>
         </Link>
-      <ProductFilter />
+        <ProductFilter onSubmitFilter={handleSubmitFilter} />
       </div>
       <div className="row">
         {page?.content.map((product) => (
@@ -65,8 +71,9 @@ const [controlComponentsData, setControlComponentsData] = useState<ControlCompon
           </div>
         ))}
       </div>
-      <Pagination 
-        pageCount={(page) ? page.totalPages : 0} 
+      <Pagination
+      forcePage={page?.number}
+        pageCount={page ? page.totalPages : 0}
         range={3}
         onChange={handlePageChange}
       />
