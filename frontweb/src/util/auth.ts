@@ -1,5 +1,4 @@
 import { Role } from "types/role";
-
 import { getTokenData } from "./token";
 
 export const isAuthenticated = (): boolean => {
