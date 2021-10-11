@@ -7,14 +7,14 @@ describe("hasAnyRoles tests", () => {
     expect(result).toEqual(true);
   });
 
-  test.only("should return true when user has given role", () => {
+  test("should return false when user does not have given role", () => {
     jest.spyOn(TokenModule, "getTokenData").mockReturnValue({
       exp: 0,
       user_name: "",
-      authorities: ["ROLE_ADMIN", "ROLE_OPERATOR"],
+      authorities: ["ROLE_OPERATOR"],
     });
 
     const result = hasAnyRoles(["ROLE_ADMIN"]);
-    expect(result).toEqual(true);
+    expect(result).toEqual(false);
   });
 });
