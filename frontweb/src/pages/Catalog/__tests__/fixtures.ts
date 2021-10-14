@@ -218,7 +218,7 @@ export const server = setupServer(
         return res(
             ctx.status(200),
             ctx.json(findAllResponse),
-        )
+        );
     })
 );
 
