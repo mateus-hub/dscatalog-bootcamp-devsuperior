@@ -1,8 +1,9 @@
 import { AxiosRequestConfig } from 'axios';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useEffect } from 'react';
 import CurrencyInput from 'react-currency-input-field';
 import { useForm, Controller } from 'react-hook-form';
-import { useHistory, useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router-dom';
 import Select from 'react-select';
 import { Category } from 'types/category';
 import { Product } from 'types/product';
@@ -61,7 +62,7 @@ const Form = () => {
     const config: AxiosRequestConfig = {
       method: isEditing ? 'PUT' : 'POST',
       url: isEditing ? `/products/${productId}` : '/products',
-      data: data,
+      data,
       withCredentials: true,
     };
 
@@ -105,7 +106,7 @@ const Form = () => {
                 </div>
               </div>
 
-              <div className="margin-bottom-30">
+              <div className="margin-bottom-30 ">
                 <label htmlFor="categories" className="d-none">Categorias</label>
                 <Controller
                   name="categories"
@@ -131,6 +132,7 @@ const Form = () => {
                   </div>
                 )}
               </div>
+
               <div className="margin-bottom-30">
                 <Controller
                   name="price"
@@ -176,7 +178,6 @@ const Form = () => {
                 </div>
               </div>
             </div>
-
             <div className="col-lg-6">
               <div>
                 <textarea

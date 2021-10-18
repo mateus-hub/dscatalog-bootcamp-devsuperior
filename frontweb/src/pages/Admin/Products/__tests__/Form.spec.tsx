@@ -82,7 +82,7 @@ describe('Product form create tests', () => {
                 <Form />
             </Router>
         );
-
+    
         const submitButton = screen.getByRole('button', { name: /salvar/i})
 
         userEvent.click(submitButton);
@@ -143,16 +143,9 @@ describe('Product form update tests', () => {
 
             const ids = productResponse.categories.map(x =>String(x.id));
             expect(formElement).toHaveFormValues({categories: ids});
-        });
-        
+        });  
 
            const submitButton = screen.getByRole('button', { name: /salvar/i})
-
-        // await selectEvent.select(categoriesInput, ['Eletrônicos', 'Computadores']);
-        // userEvent.type(nameInput, 'Computador');
-        // userEvent.type(priceInput, '5000.12');
-        // userEvent.type(imgUrlInput, 'https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/1-big.jpg');
-        // userEvent.type(descriptionInput, 'Computador muito bom');
 
         userEvent.click(submitButton);
 
@@ -161,7 +154,7 @@ describe('Product form update tests', () => {
             expect(toastElement).toBeInTheDocument();
         });
    
-        // expect(history.location.pathname).toEqual('/admin/products');
+         expect(history.location.pathname).toEqual('/admin/products');
     });
 });
 
