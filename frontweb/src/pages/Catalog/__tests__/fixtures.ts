@@ -11,7 +11,12 @@ const findAllResponse = {
             "price": 90.5,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/1-big.jpg",
             "date": "2020-07-13T20:50:07.123450Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "Livros"
+                }
+            ]
         },
         {
             "id": 2,
@@ -20,7 +25,16 @@ const findAllResponse = {
             "price": 2190.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/2-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 2,
+                    "name": "Eletrônicos"
+                },
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 3,
@@ -29,7 +43,12 @@ const findAllResponse = {
             "price": 1250.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/3-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 4,
@@ -38,7 +57,12 @@ const findAllResponse = {
             "price": 1200.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/4-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 5,
@@ -47,7 +71,12 @@ const findAllResponse = {
             "price": 100.99,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/5-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 1,
+                    "name": "Livros"
+                }
+            ]
         },
         {
             "id": 6,
@@ -56,7 +85,12 @@ const findAllResponse = {
             "price": 1350.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/6-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 7,
@@ -65,7 +99,12 @@ const findAllResponse = {
             "price": 1350.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/7-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 8,
@@ -74,7 +113,12 @@ const findAllResponse = {
             "price": 1850.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/8-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 9,
@@ -83,7 +127,12 @@ const findAllResponse = {
             "price": 1950.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/9-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 10,
@@ -92,7 +141,12 @@ const findAllResponse = {
             "price": 1700.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/10-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 11,
@@ -101,7 +155,12 @@ const findAllResponse = {
             "price": 1450.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/11-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 12,
@@ -110,7 +169,12 @@ const findAllResponse = {
             "price": 1850.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/12-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 13,
@@ -119,7 +183,12 @@ const findAllResponse = {
             "price": 1350.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/13-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 14,
@@ -128,7 +197,12 @@ const findAllResponse = {
             "price": 2250.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/14-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 15,
@@ -137,7 +211,12 @@ const findAllResponse = {
             "price": 2200.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/15-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 16,
@@ -146,7 +225,12 @@ const findAllResponse = {
             "price": 2340.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/16-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 17,
@@ -155,7 +239,12 @@ const findAllResponse = {
             "price": 1280.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/17-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 18,
@@ -164,7 +253,12 @@ const findAllResponse = {
             "price": 1450.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/18-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 19,
@@ -173,7 +267,12 @@ const findAllResponse = {
             "price": 1750.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/19-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         },
         {
             "id": 20,
@@ -182,7 +281,12 @@ const findAllResponse = {
             "price": 1650.0,
             "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/20-big.jpg",
             "date": "2020-07-14T10:00:00Z",
-            "categories": []
+            "categories": [
+                {
+                    "id": 3,
+                    "name": "Computadores"
+                }
+            ]
         }
     ],
     "pageable": {
@@ -192,23 +296,23 @@ const findAllResponse = {
             "empty": true
         },
         "offset": 0,
-        "pageNumber": 0,
         "pageSize": 20,
-        "paged": true,
-        "unpaged": false
+        "pageNumber": 0,
+        "unpaged": false,
+        "paged": true
     },
+    "last": false,
     "totalPages": 2,
     "totalElements": 25,
-    "last": false,
+    "size": 20,
     "number": 0,
     "sort": {
         "sorted": false,
         "unsorted": true,
         "empty": true
     },
-    "size": 20,
-    "numberOfElements": 20,
     "first": true,
+    "numberOfElements": 20,
     "empty": false
 }
 
