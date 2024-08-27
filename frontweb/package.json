@@ -17,6 +17,7 @@
     "@types/react-select": "^4.0.17",
     "axios": "^0.21.1",
     "bootstrap": "^5.1.0",
+    "frontweb": "file:",
     "jwt-decode": "^3.1.2",
     "msw": "^0.35.0",
     "node-sass": "4.14.1",
