@@ -71,4 +71,3 @@ const Catalog = () => {
 export default Catalog;
 
 
-//<Link to="/products/1">
